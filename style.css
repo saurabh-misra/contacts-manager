@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+div#root{
+    width: 506px;
+    margin: 100px auto 0;
+}
+h1#header{
+    margin-bottom: 20px;
+}
+input, button{
+    padding: 5px;
+    box-sizing: border-box;
+}
+input{
+    width: 40%;
+}
+button{
+    width: 20%;
+}
+ul.contacts{
+    list-style-type: none;
+    margin-top: 30px;
+}
+li.contact{
+    border: 1px solid #ddd;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    position: relative;
+    margin-bottom: 5px;
+}
+li.contact > span.phone{
+    color: #888;
+    font-size: 14px;
+}
+li.contact > span.star-icon-container{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #888;
+    cursor: pointer;
+}
+li.contact > span.star-icon-container.favorite{
+    color: gold;
+}
+p.footer{
+    margin-top: 20px;
+}
+.hidden{
+    display: none;
+}
