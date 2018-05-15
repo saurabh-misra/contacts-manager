@@ -163,6 +163,7 @@ const ContactList = ({
         </ul>
     );
 };
+
 const getVisibleContacts = (contacts, filter) => {
     if (filter === 'SHOW_FAVORITES')
         return contacts.filter((contact) => contact.isFavorite);
@@ -241,7 +242,7 @@ const Footer = ({ store }) => {
     );
 }
 
-const ContactApp = ({ store }) => (
+const ContactApp = () => (
     <div>
         <Header />
         <AddContact />
