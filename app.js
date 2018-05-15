@@ -55,7 +55,7 @@ const addContact = (name, phone) => {
         type: 'ADD_CONTACT',
         contact: {
             name,
-            id: nextTodoId++,
+            id: nextContactId++,
             phone,
             isFavorite: false
         }
@@ -86,7 +86,7 @@ const Header = () => {
     return <h1 id='header'>Contacts</h1>;
 };
 
-let nextTodoId = 0;
+let nextContactId = 0;
 let AddContact = ({ dispatch }) => {
     let inputName = React.createRef();
     let inputPhone = React.createRef();
@@ -241,7 +241,7 @@ const Footer = ({ store }) => {
     );
 }
 
-const TodoApp = ({ store }) => (
+const ContactApp = ({ store }) => (
     <div>
         <Header />
         <AddContact />
@@ -254,7 +254,7 @@ const { createStore } = Redux;
 
 ReactDOM.render(
     <Provider store={createStore(contactApp)}>
-        <TodoApp />
+        <ContactApp />
     </Provider>,
     document.getElementById('root')
 );
